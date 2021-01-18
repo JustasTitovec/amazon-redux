@@ -1,0 +1,77 @@
+.checkout__ad {
+  width: 100%;
+  margin-bottom: 10px;
+  height: 150px;
+}
+
+.checkout__title {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  padding: 10px;
+  border-bottom: 1px solid lightgrey;
+  p {
+    font-size: 13px;
+    color: #565959;
+  }
+  h2 {
+    font-size: 21px;
+  }
+}
+
+.checkout__emptyBasket {
+  display: flex;
+  h2 {
+    font-size: 21px;
+    margin-top: 30px;
+    margin-left: 20px;
+  }
+  img {
+    width: 340px;
+    height: 200px;
+    object-fit: contain;
+  }
+}
+
+.checkout__left {
+  width: 100%;
+  margin-right: 20px;
+}
+
+.checkout {
+  display: flex;
+  padding: 20px;
+  background-color: white;
+  height: max-content;
+  justify-content: space-between;
+}
+
+.checkout__subtotal {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  font-size: 17px;
+  margin-right: 10px;
+}
+
+.checkout__footer {
+  margin-top: 30px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.checkout__right {
+  display: flex;
+  flex-direction: column;
+}
+
+.checkout__books {
+  margin-top: 30px;
+  border: 1px solid lightgrey;
+  h1 {
+    font-size: 13px;
+    padding: 20px 20px 0px 20px;
+    margin-left: 15px;
+  }
+}

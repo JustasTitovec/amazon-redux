@@ -1,0 +1,25 @@
+.home__image {
+  width: 100%;
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  z-index: -1;
+  margin-bottom: -180px;
+}
+
+/* .home {
+  max-width: 1250px;
+  margin-left: auto;
+  margin-right: auto;
+} */
+
+.home__row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  z-index: 1;
+  margin-left: 20px;
+}
+
+.searchResults {
+  z-index: 2;
+  position: relative;
+}
