@@ -1,11 +1,18 @@
 import React, { useState } from 'react';
 import './CheckoutProduct.scss';
-import { useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { Link } from 'react-router-dom';
 
 function CheckoutProduct({ id, title, price, image, rating }) {
   const [quantity, setQuantity] = useState(1);
-  // const basket = useSelector((state) => state.basket);
+  const dispatch = useDispatch();
+
+  const removeItem = () => {
+    dispatch({
+      type: 'REMOVE_FROM_BASKET',
+      id: id,
+    });
+  };
 
   const getQuantity = (e) => {
     let selectedQuantity = e.target.value;
@@ -43,7 +50,11 @@ function CheckoutProduct({ id, title, price, image, rating }) {
             <option value="7">Qty: 7</option>
             <option value="8">Qty: 8</option>
           </select>
-          <button className="checkoutProduct__remove-button" key={id}>
+          <button
+            onClick={removeItem}
+            className="checkoutProduct__remove-button"
+            key={id}
+          >
             Remove from basket
           </button>
         </div>

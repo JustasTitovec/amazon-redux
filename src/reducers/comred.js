@@ -1,9 +1,8 @@
-import { addToBasket } from './index';
+import { appReducer } from './index';
 import { combineReducers } from 'redux';
-import { red } from '@material-ui/core/colors';
 
 const reducer = combineReducers({
-  basket: addToBasket,
+  cbc: appReducer,
 });
 
 export default reducer;

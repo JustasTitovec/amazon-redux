@@ -11,11 +11,13 @@ function Header(props) {
   return (
     <div>
       <nav className="header">
-        <img
-          className="header__logo"
-          src="http://pngimg.com/uploads/amazon/amazon_PNG11.png"
-          alt="amazon"
-        />
+        <Link to="/">
+          <img
+            className="header__logo"
+            src="http://pngimg.com/uploads/amazon/amazon_PNG11.png"
+            alt="amazon"
+          />
+        </Link>
 
         <div className="header__search">
           <input

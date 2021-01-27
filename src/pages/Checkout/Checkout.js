@@ -14,6 +14,8 @@ import Footer from '../../components/Footer/Footer';
 function Checkout() {
   const basket = useSelector((state) => state.basket);
 
+  console.log(basket);
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
